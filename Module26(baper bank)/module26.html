@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baap Ar Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-center mb-5 text-5xl font-bold">
+      Welcome to your <span class="text-teal-400">Baap Ar Bank!!!</span>
+    </h1>
+    <div class="bg-sky-400 pl-8 w-9/12 mx-auto">
+        <h2 class="text-3xl mb-3 font-semibold">please login</h2> <br>
+        <input class="mb-5 rounded-md w-9/12" id="input-1" placeholder="Enter your valid gmail" type="text">
+        <input class="mb-5 rounded-md w-9/12" id="input-2" placeholder="Enter your valid password" type="text">
+        <br>
+        <button id="btn" class="p-3 rounded-xl text-white bg-red-300">Submit</button>
+    </div>
+    <script>
+        document.getElementById('btn').addEventListener('click',function(){
+            // console.log('hi')
+            const inputGmail = document.getElementById('input-1')
+            const gmail = inputGmail.value 
+            const inputPass = document.getElementById('input-2')
+            const password = inputPass.value
+            if(gmail == 'baperBank@gmail.com' && password == 'pass'){
+                window.location.href = 'http://127.0.0.1:5500/moudule26(2ndPage).html';
+            }else{
+                alert( 'give me right gmail and pass')
+            }
+        })
+    </script>
+  </body>
+</html>
